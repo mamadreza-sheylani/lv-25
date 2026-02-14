@@ -85,8 +85,9 @@ let clicks = 0;
 no_button.addEventListener('click', () => {
     // Change banner source
     let banner = document.getElementById('banner');
+    document.getElementById("question-heading").style.display="none";
     if (clicks === 0) {
-        banner.src = "public/images/no.gif";
+        banner.src = "public/images/no.jpg";
         refreshBanner();
     }
     clicks++;
@@ -115,7 +116,7 @@ no_button.addEventListener('click', () => {
 yes_button.addEventListener('click', () => {
     // change banner gif path
     let banner = document.getElementById('banner');
-    banner.src = "public/images/yes.gif";
+    banner.src = "public/images/yes.webp";
     refreshBanner();
     // hide buttons div
     let buttons = document.getElementsByClassName('buttons')[0];
