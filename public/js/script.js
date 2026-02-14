@@ -105,10 +105,10 @@ no_button.addEventListener('click', () => {
     } else if (i === total - 1) {
         alert(answers_no[language][i]);
         i = 1;
-        no_button.innerHTML = answers_no[language][0];
-        yes_button.innerHTML = answers_yes[language];
+        yes_button.style.width = "50px"
         yes_button.style.height = "50px";
-        yes_button.style.width = "50px";
+        no_button.innerHTML = answers_no[language][0];
+        yes_button.innerHTML = answers_yes[language][0];
         size = 50;
     }
 });
